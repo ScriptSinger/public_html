@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /auth/login
+Host: https://ufamasters.ru
+Sitemap: https://ufamasters.ru/sitemap.xml

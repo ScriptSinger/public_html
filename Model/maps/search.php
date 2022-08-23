@@ -1,0 +1,1 @@
+<?php	return array(		'pages' => array(						'fields' => array('title', 'content'),						'where' => "is_show = '1'",						'template' => 'search/v_pages.php'						),		'users' => array(						'fields' => array('name'),						'where' => "id_role = '1'",						'template' => 'search/v_users.php'						)	);

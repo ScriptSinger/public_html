@@ -1,0 +1,16 @@
+RewriteEngine on
+
+#Rewrite all other URLs to index.php/?[URL]
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule .* index.php?querysystemural=$0 [QSA]
+
+Options -Indexes
+
+<FilesMatch "/.(php|txt)$">
+Deny from all
+</FilesMatch>
+
+<FilesMatch "^index.(php)$">
+Allow from all
+</FilesMatch>
